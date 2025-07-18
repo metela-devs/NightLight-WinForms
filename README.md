@@ -12,7 +12,8 @@ A simple yet powerful utility for Windows to reduce eye strain by filtering blue
 - **System Tray Control**: Hides in the tray for easy access without cluttering your taskbar.
 - **Simple Toggle**: Turn the filter on and off with a single click.
 - **Modern UI**: Clean, minimalist, and easy-to-use interface.
-- **Customizable**: Easily adjust the filter strength (in code).
+- **Intensity Slider**: Adjust the filter strength in real-time with a simple slider.
+- **Theme-Aware UI**: All UI elements now correctly adapt to the selected theme.
 
 ### 💾 Installation
 1. Go to the [**Releases**](../../releases/latest) page.
@@ -43,7 +44,8 @@ This project is licensed under the MIT License. Copyright (c) 2025, Metela devs.
 - **Управление из трея**: Сворачивается в трей для быстрого доступа, не загромождая панель задач.
 - **Простой переключатель**: Включайте и выключайте фильтр одним кликом.
 - **Современный интерфейс**: Чистый, минималистичный и удобный.
-- **Настраиваемость**: Легко изменить силу фильтра (в коде).
+- **Ползунок интенсивности**: Настраивайте силу фильтра в реальном времени с помощью простого ползунка.
+- **Адаптивный интерфейс**: Все элементы интерфейса теперь корректно подстраиваются под выбранную тему.
 
 ### 💾 Установка
 1. Перейдите на страницу [**Релизы**](../../releases/latest).

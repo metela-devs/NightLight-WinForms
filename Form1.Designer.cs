@@ -39,8 +39,11 @@ partial class Form1
         this.titleBarPanel = new System.Windows.Forms.Panel();
         this.closeButton = new System.Windows.Forms.Button();
         this.titleLabel = new System.Windows.Forms.Label();
+        this.intensityTrackBar = new System.Windows.Forms.TrackBar();
+        this.intensityLabel = new System.Windows.Forms.Label();
         this.contextMenuStrip1.SuspendLayout();
         this.titleBarPanel.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)(this.intensityTrackBar)).BeginInit();
         this.SuspendLayout();
         // 
         // notifyIcon1
@@ -90,7 +93,7 @@ partial class Form1
         this.copyrightLabel.AutoSize = true;
         this.copyrightLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
         this.copyrightLabel.LinkColor = System.Drawing.Color.Gray;
-        this.copyrightLabel.Location = new System.Drawing.Point(110, 175);
+        this.copyrightLabel.Location = new System.Drawing.Point(110, 215);
         this.copyrightLabel.Name = "copyrightLabel";
         this.copyrightLabel.Size = new System.Drawing.Size(76, 15);
         this.copyrightLabel.TabIndex = 1;
@@ -101,7 +104,7 @@ partial class Form1
         // themeToggleButton
         // 
         this.themeToggleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        this.themeToggleButton.Location = new System.Drawing.Point(12, 168);
+        this.themeToggleButton.Location = new System.Drawing.Point(12, 208);
         this.themeToggleButton.Name = "themeToggleButton";
         this.themeToggleButton.Size = new System.Drawing.Size(75, 23);
         this.themeToggleButton.TabIndex = 2;
@@ -145,11 +148,34 @@ partial class Form1
         this.titleLabel.Text = "Night Light";
         this.titleLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titleBarPanel_MouseDown);
         // 
+        // intensityTrackBar
+        // 
+        this.intensityTrackBar.Location = new System.Drawing.Point(50, 155);
+        this.intensityTrackBar.Maximum = 4800;
+        this.intensityTrackBar.Minimum = 3000;
+        this.intensityTrackBar.Name = "intensityTrackBar";
+        this.intensityTrackBar.Size = new System.Drawing.Size(200, 45);
+        this.intensityTrackBar.TabIndex = 4;
+        this.intensityTrackBar.TickFrequency = 500;
+        this.intensityTrackBar.Value = 4500;
+        this.intensityTrackBar.Scroll += new System.EventHandler(this.intensityTrackBar_Scroll);
+        // 
+        // intensityLabel
+        // 
+        this.intensityLabel.AutoSize = true;
+        this.intensityLabel.Location = new System.Drawing.Point(115, 135);
+        this.intensityLabel.Name = "intensityLabel";
+        this.intensityLabel.Size = new System.Drawing.Size(64, 15);
+        this.intensityLabel.TabIndex = 5;
+        this.intensityLabel.Text = "Intensity: 4500K";
+        // 
         // Form1
         // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(300, 200);
+        this.ClientSize = new System.Drawing.Size(300, 240);
+        this.Controls.Add(this.intensityLabel);
+        this.Controls.Add(this.intensityTrackBar);
         this.Controls.Add(this.titleBarPanel);
         this.Controls.Add(this.themeToggleButton);
         this.Controls.Add(this.copyrightLabel);
@@ -162,6 +188,7 @@ partial class Form1
         this.contextMenuStrip1.ResumeLayout(false);
         this.titleBarPanel.ResumeLayout(false);
         this.titleBarPanel.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)(this.intensityTrackBar)).EndInit();
         this.ResumeLayout(false);
         this.PerformLayout();
     }
@@ -178,4 +205,6 @@ partial class Form1
     private System.Windows.Forms.Panel titleBarPanel;
     private System.Windows.Forms.Button closeButton;
     private System.Windows.Forms.Label titleLabel;
+    private System.Windows.Forms.TrackBar intensityTrackBar;
+    private System.Windows.Forms.Label intensityLabel;
 }
